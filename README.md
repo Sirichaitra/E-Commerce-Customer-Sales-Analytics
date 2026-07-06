@@ -47,8 +47,6 @@ The project uses the Brazilian E-Commerce Public Dataset (Olist), containing inf
 
 ## 📊 Dashboard Preview
 
-> Add the dashboard screenshot here after uploading it.
-
 ![Dashboard](images/dashboard.png)
 
 ---
@@ -88,7 +86,7 @@ The project uses the Brazilian E-Commerce Public Dataset (Olist), containing inf
 
 ## 📁 Project Structure
 
-```
+```text
 Customer_Sales_Analytics/
 │
 ├── cleaned_data/
@@ -99,23 +97,25 @@ Customer_Sales_Analytics/
 │   ├── monthly_revenue.png
 │   ├── payment_methods.png
 │   ├── review_scores.png
-│   ├── top_categories.png
-│   └── top_states.png
+│   └── top_categories.png
 │
 ├── python/
 │   ├── clean_data.py
-│   ├── feature_engineering.py
 │   ├── eda.py
-│   └── load_to_mysql.py
+│   ├── load_to_mysql.py
+│   └── understand_data.py
 │
 ├── sql/
 │   ├── schema.sql
 │   └── analysis.sql
 │
 ├── powerbi/
-│   └── Customer_Sales_Analytics_Dashboard.pbix
+│   ├── Customer_Sales_Analytics_Dashboard.pbix
+│   ├── Customer_Sales_Analytics_Dashboard.pbit
+│   └── Customer_Sales_Analytics_Dashboard.pdf
 │
 ├── README.md
+├── LICENSE
 ├── requirements.txt
 └── .gitignore
 ```
@@ -124,38 +124,29 @@ Customer_Sales_Analytics/
 
 ## ▶️ How to Run
 
-### 1. Clone the repository
+1. Clone the repository.
 
 ```bash
-git clone https://github.com/your-username/Customer_Sales_Analytics.git
+git clone https://github.com/Sirichaitra/E-Commerce-Customer-Sales-Analytics.git
 ```
 
-### 2. Install dependencies
+2. Install dependencies.
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Import the cleaned CSV files into MySQL
+3. Create the MySQL database using `schema.sql`.
 
-Run:
+4. Load the cleaned datasets using `load_to_mysql.py`.
 
-- schema.sql
-- load_to_mysql.py
-
-### 4. Open the Power BI Dashboard
-
-Open:
-
-```
-Customer_Sales_Analytics_Dashboard.pbix
-```
+5. Open `Customer_Sales_Analytics_Dashboard.pbix` in Power BI Desktop.
 
 ---
 
 ## 📌 Future Improvements
 
-- Sales Forecasting using Machine Learning
+- Sales Forecasting
 - Customer Segmentation
 - Profit Analysis
 - Interactive Drill-through Reports
@@ -166,6 +157,4 @@ Customer_Sales_Analytics_Dashboard.pbix
 
 **Siri Chaitra Tumpudi**
 
-LinkedIn: *Add your LinkedIn profile*
-
-GitHub: *Add your GitHub profile*
+GitHub: https://github.com/Sirichaitra
